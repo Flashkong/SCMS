@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>库存记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+    <link href="plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+    <link href="css/goods-style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mycontainer">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default mynavbar" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">库存控制管理系统</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">库存记录</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">其他选择</li>
+                            <li><a href="goods.html">商品管理</a></li>
+                            <li><a href="store.html">库管理</a></li>
+                            <li><a href="instore.html">出库</a></li>
+                            <li><a href="outstore.html">出库</a></li>
+                            <li><a href="panstore.html">盘库</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" id="user_name"><a href="#"></a></li>
+                    <li><a href="#">更改密码</a></li>
+                    <li><a href="index.html">注销</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <div id="toolbar" class="btn-group">
+        <button class="btn btn-default btn-hint">这是一个看不见的东西，啦啦啦啦啦，啦啦啦啦，啦啦啦啦啦lalalallala啦啦啦啦，啦啦啦啦啦啦</button>
+        <div class="my-search">
+            <select name="search-name" type="text" class="form-control my-search-select" id="search-name">
+                <option>商品编号</option>
+                <option>商品名称</option>
+                <option>商品类别</option>
+                <option>商品生产商</option>
+                <option>商品所在库编号</option>
+                <option>商品所在库名称</option>
+                <option>商品数目</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="table container">
+        <table id="goods-table" class="my-table"></table>
+        <h6 style="visibility: hidden;">a</h6>
+    </div>
+</div>
+
+<!--footer start -->
+<footer id="footer">
+
+    <!-- .subfooter start -->
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Copyright &copy; 2018.All rights reserved. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .subfooter end -->
+
+</footer>
+<!--footer end -->
+
+<!-- JavaScript -->
+<script src="plugins/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+<script src="plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="plugins/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="plugins/bootstrap3-editable/js/bootstrap-table-editable.js"></script>
+<script src="plugins/bootbox/bootbox.min.js"></script>
+<script src="plugins/layer/layer.js"></script>
+<script src="plugins/easyform/jquery.easyform.js"></script>
+<script src="plugins/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="plugins/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+<script src="plugins/tableExport.js"></script>
+
+<!-- Custom Scripts -->
+<script type="text/javascript" src="js/stock.js"></script>
+</body>
+</html>

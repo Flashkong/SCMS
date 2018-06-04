@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,400,300);
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.brand {
+	font-family: 'Raleway', sans-serif;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-size: 15px;
+	line-height: 1.50;
+	color: #333333;
+	background-color: #ffffff;
+	position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333333;
+}
+h1 {
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+h3 {
+	font-size: 22px;
+}
+h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+h5 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h6 {
+	font-weight: 700;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+	color: #DB0A61;
+}
+.colored {
+	color: #DB0A61;
+}
+a {
+	color: #55acee;
+}
+a:hover {
+	color: #339BEB;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+.large {
+	font-size: 18px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.list-unstyled li {
+	padding: 5px 0;
+}
+.list-horizontal {
+	padding: 15px 0;
+}
+.list-horizontal-item img {
+	display: block;
+	margin: 0 auto;
+}
+.list-icons {
+	padding: 0;
+	margin: 20px 0;
+	list-style: none;
+	font-size: 18px;
+}
+.list-icons li {
+	padding: 0 0 15px 0;
+}
+blockquote {
+	border-left: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+.title {
+	margin-top: 0;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+.subfooter {
+	background-color: #DA095F;
+	padding: 20px 0 20px 0;
+	color: white;
+}
+#footer{
+	margin-top: 25px;
+	width: inherit;
+}
+.subfooter a {
+	color: #FF89BA;
+}
+
+.mycontainer{
+	margin-top: 15px;
+}
+
+body {
+	height: 100%;width: 100%;
+	background: url('../images/index.jpg');
+	background-size:cover;
+}
+.my-table{
+	width: 80%;
+	background-color: white;
+}
+.table{
+	background-color: white;
+	border-radius: 4px;
+}
+.my-search-select{
+	float: right;
+}
+.my-search{
+	float: right;
+	position: relative;
+	bottom: 1px;
+}
+.btn-hint{
+	visibility: hidden;
+}
