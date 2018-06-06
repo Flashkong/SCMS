@@ -115,7 +115,7 @@ function initTable() {
 
 function delPer(Sid) {
     //删除时候的操作
-    layer.confirm('删除商品信息的同时，入库表，出库表，库存现状表，盘库表中有关商品的记录将会全部删除，你确定要执行' +
+    layer.confirm('删除库信息的同时，入库表，出库表，库存现状表，盘库表中有关库的记录将会全部删除，你确定要执行' +
         '此操作?', {icon: 3, title:'提示'}, function(index){
         //do something
         debugger;

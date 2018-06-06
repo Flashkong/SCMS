@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import fun.ConnectResponse;
 
+import java.math.BigDecimal;
 import java.sql.ResultSet;
 
 public class compute_profile_con {
@@ -33,6 +34,8 @@ public class compute_profile_con {
                 while (OutresultSet.next()){
                     Ountget+=OutresultSet.getLong("Onum")*OutresultSet.getDouble("Oprice");
                 }
+                Incost=new BigDecimal(Incost).setScale(2,   BigDecimal.ROUND_HALF_UP).doubleValue();
+                Ountget=new BigDecimal(Ountget).setScale(2,   BigDecimal.ROUND_HALF_UP).doubleValue();
                 JSONObject jsonObject=new JSONObject();
                 jsonObject.put("Incost",Incost);
                 jsonObject.put("Outget",Ountget);
